@@ -6,5 +6,8 @@ public class Nuevo extends PApplet{
 		// TODO Auto-generated method stub
 	}
 	
+	/*TODO ingresar datos de usuario como: Nombre, apellido, usuario, contraseña, carrera
+	 * 
+	 */
 	
 }
