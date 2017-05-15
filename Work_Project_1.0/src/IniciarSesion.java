@@ -11,6 +11,9 @@ public class IniciarSesion extends JFrame{
 	private final JTextField txt01 = new JTextField(23);
 	private final JTextField txt02 = new JTextField(23);
 	
+	public JButton cancelar = new JButton("Cancelar");
+	public JButton aceptar = new JButton("Aceptar");
+	
 	public static void main(String[] args) {
 		JFrame frm = new IniciarSesion();
 	    frm.setVisible(true);
@@ -27,20 +30,26 @@ public class IniciarSesion extends JFrame{
 	     SpringLayout layout = new SpringLayout();
 	     contenedor.setLayout(layout);
 	     //Coordenadas de los elementos
+	     
 	     //Usuario
 	     layout.putConstraint(SpringLayout.WEST, Lb01,26, SpringLayout.WEST, contenedor);
 	     layout.putConstraint(SpringLayout.NORTH, Lb01,130, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt01,100, SpringLayout.WEST, contenedor);
 	     layout.putConstraint(SpringLayout.NORTH, txt01,130, SpringLayout.NORTH, contenedor);
-	   //Contraseña
+	     //Contraseña
 	     layout.putConstraint(SpringLayout.WEST, Lb02,26, SpringLayout.WEST, contenedor);
 	     layout.putConstraint(SpringLayout.NORTH, Lb02,160, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt02,100, SpringLayout.WEST, contenedor);
 	     layout.putConstraint(SpringLayout.NORTH, txt02,160, SpringLayout.NORTH, contenedor);
-	   
 	     //titulo
 	     layout.putConstraint(SpringLayout.WEST, Lb0,150, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb0,95, SpringLayout.NORTH, contenedor);	     
+	     layout.putConstraint(SpringLayout.NORTH, Lb0,95, SpringLayout.NORTH, contenedor);	
+	     //Botón Cancelar
+		 layout.putConstraint(SpringLayout.WEST, cancelar,70, SpringLayout.WEST, contenedor);
+		 layout.putConstraint(SpringLayout.NORTH, cancelar,220, SpringLayout.NORTH, contenedor);
+		 //Botón Aceptar
+		 layout.putConstraint(SpringLayout.WEST, aceptar,220, SpringLayout.WEST, contenedor);
+		 layout.putConstraint(SpringLayout.NORTH, aceptar,220, SpringLayout.NORTH, contenedor);
 	     
 	     //Añadiendo componentes 
 	     contenedor.add(Lb0);
@@ -48,7 +57,8 @@ public class IniciarSesion extends JFrame{
 	     contenedor.add(txt01);
 	     contenedor.add(Lb02);
 	     contenedor.add(txt02);
-	     
+	     contenedor.add(cancelar);
+	     contenedor.add(aceptar);
 	    }
 	/*TODO Solicitar datos al usuario: Usuario y contraseña
 	 * 

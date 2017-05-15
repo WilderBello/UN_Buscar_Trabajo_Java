@@ -1,5 +1,6 @@
 //import processing.core.*;
 import java.awt.*;
+
 import javax.swing.*;
 
 public class Nuevo extends JFrame{
@@ -19,6 +20,9 @@ public class Nuevo extends JFrame{
 	private final JTextField txt04 = new JTextField(23);
 	private final JTextField txt05 = new JTextField(23);
 	private final JTextField txt06 = new JTextField(23);
+	
+	public JButton cancelar = new JButton("Cancelar");
+	public JButton aceptar = new JButton("Aceptar");
 
 	public static void main(String[] args) {
 		JFrame frm = new Nuevo();
@@ -71,7 +75,13 @@ public class Nuevo extends JFrame{
 	     layout.putConstraint(SpringLayout.NORTH, Lb00,250, SpringLayout.NORTH, contenedor);
 	     //titulo
 	     layout.putConstraint(SpringLayout.WEST, Lb0,150, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb0,35, SpringLayout.NORTH, contenedor);	     
+	     layout.putConstraint(SpringLayout.NORTH, Lb0,35, SpringLayout.NORTH, contenedor);
+	     //Botón Cancelar
+		  layout.putConstraint(SpringLayout.WEST, cancelar,70, SpringLayout.WEST, contenedor);
+		  layout.putConstraint(SpringLayout.NORTH, cancelar,280, SpringLayout.NORTH, contenedor);
+		  //Botón Aceptar
+		  layout.putConstraint(SpringLayout.WEST, aceptar,220, SpringLayout.WEST, contenedor);
+		  layout.putConstraint(SpringLayout.NORTH, aceptar,280, SpringLayout.NORTH, contenedor);
 	     
 	     //Añadiendo componentes 
 	     contenedor.add(Lb0);
@@ -88,6 +98,9 @@ public class Nuevo extends JFrame{
 	     contenedor.add(txt05);
 	     contenedor.add(Lb06);
 	     contenedor.add(txt06);
+	     
+	     contenedor.add(cancelar);
+	     contenedor.add(aceptar);
 	    }
 	
 	/*TODO ingresar datos de usuario como: Nombre, apellido, usuario, contraseña, carrera
