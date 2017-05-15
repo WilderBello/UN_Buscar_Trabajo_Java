@@ -1,7 +1,7 @@
 //import processing.core.*;
-
 import java.awt.*;
 import javax.swing.*;
+
 public class Nuevo extends JFrame{
 	// TODO textbox encontrados en: http://mrtoymo.blogspot.com.co/2012/09/como-crear-cajas-de-texto-para-meter.html
 	
@@ -28,6 +28,7 @@ public class Nuevo extends JFrame{
 	public Nuevo(){
 	     super("Nuevo Usuario");
 	     setSize(400,400);
+	     setLocation(350,150);
 	     setResizable(false);
 	     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	     //TODO Adherir elementos
@@ -37,40 +38,40 @@ public class Nuevo extends JFrame{
 	     //Coordenadas de los elementos
 	     //Usuario
 	     layout.putConstraint(SpringLayout.WEST, Lb01,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb01,50, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb01,70, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt01,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt01,50, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt01,70, SpringLayout.NORTH, contenedor);
 	   //Contraseña
 	     layout.putConstraint(SpringLayout.WEST, Lb02,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb02,80, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb02,100, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt02,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt02,80, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt02,100, SpringLayout.NORTH, contenedor);
 	   //Nombres
 	     layout.putConstraint(SpringLayout.WEST, Lb03,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb03,110, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb03,130, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt03,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt03,110, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt03,130, SpringLayout.NORTH, contenedor);
 	   //Apellidos
 	     layout.putConstraint(SpringLayout.WEST, Lb04,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb04,140, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb04,160, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt04,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt04,140, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt04,160, SpringLayout.NORTH, contenedor);
 	   //Telefono
 	     layout.putConstraint(SpringLayout.WEST, Lb05,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb05,170, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb05,190, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt05,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt05,170, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt05,190, SpringLayout.NORTH, contenedor);
 	   //Carrera
 	     layout.putConstraint(SpringLayout.WEST, Lb06,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb06,200, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb06,220, SpringLayout.NORTH, contenedor);
 	     layout.putConstraint(SpringLayout.WEST, txt06,100, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, txt06,200, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, txt06,220, SpringLayout.NORTH, contenedor);
 	     //Observación
 	     layout.putConstraint(SpringLayout.WEST, Lb00,26, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb00,230, SpringLayout.NORTH, contenedor);
+	     layout.putConstraint(SpringLayout.NORTH, Lb00,250, SpringLayout.NORTH, contenedor);
 	     //titulo
 	     layout.putConstraint(SpringLayout.WEST, Lb0,150, SpringLayout.WEST, contenedor);
-	     layout.putConstraint(SpringLayout.NORTH, Lb0,25, SpringLayout.NORTH, contenedor);	     
+	     layout.putConstraint(SpringLayout.NORTH, Lb0,35, SpringLayout.NORTH, contenedor);	     
 	     
 	     //Añadiendo componentes 
 	     contenedor.add(Lb0);
