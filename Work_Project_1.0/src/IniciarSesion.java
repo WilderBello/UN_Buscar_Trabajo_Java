@@ -25,20 +25,25 @@ public class IniciarSesion extends PApplet{
 		     .setPosition(100,100)
 		     .setSize(200,30)
 		     .setFont(font)
-		     .setFocus(true)
-		     .setColor(color(255,0,0))
+		     //.setFocus(true)
+		     //.setColor(color(255,0,0))
 		     .setAutoClear(false)
 		     ;
 		//Label Contraseña              
 		  cp5.addTextfield("Password")
 		     .setPosition(100,170)
 		     .setSize(200,30)
-		     .setFont(createFont("arial",30))
+		     .setFont(font)
 		     .setAutoClear(false)
 		     ;
 		  //TODO Botón    
 		  cp5.addBang("Ingresar")
-		     .setPosition(160,240)
+		     .setPosition(110,240)
+		     .setSize(80,40)
+		     .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER)
+		     ; 
+		  cp5.addBang("Cancelar")
+		     .setPosition(210,240)
 		     .setSize(80,40)
 		     .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER)
 		     ; 
@@ -47,14 +52,14 @@ public class IniciarSesion extends PApplet{
 		}
 	
 	public void draw() {
-		  background(150);
+		  background(180);
 		  fill(255);
-		  text(cp5.get(Textfield.class,"User").getText(), 360,130);
+		  //text(cp5.get(Textfield.class,"User").getText(), 360,130);
 		  text(textValue, 360,180);
 		}
 
-	public void clear() {
-		  cp5.get(Textfield.class,"Password").clear();
+	public void Cancelar() {
+		exit();
 		}
 
 	public void controlEvent(ControlEvent theEvent) {
