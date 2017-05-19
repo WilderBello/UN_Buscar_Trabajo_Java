@@ -74,7 +74,18 @@ public class Nuevo extends PApplet{
 		     .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER)
 		     ; 
 ////////////////////////// ScrollableList (Carreras) ////////////////////////////////////		 		     
-		  List l = Arrays.asList("Ingenieria", "Filologia", "c", "d", "e", "f", "g", "h");
+		  List l = Arrays.asList("Arquitectura","Artes Plásticas", "Cine y Televisión",
+				  "Diseño Gráfico","Diseño Industrial","Música","Música Instrumental", 
+				  "Biología","Estadística","Farmacia","Física","Geología","Matemáticas",
+				  "Química","Administración de Empresas","Contaduría Pública","Economía",
+				  "Antropología","Español y Filología Clásica","Estudios Literarios",
+				  "Filología e Idiomas (Alemán)","Filología e Idiomas (Francés)","Filología e Idiomas (Inglés)",
+				  "Filosofía","Geografía","Historia","Lingüística","Psicología","Sociología",
+				  "Trabajo Social","Ciencia Política","Derecho","Enfermería","Ingeniería Agrícola",
+				  "Ingeniería Civil","Ingeniería de Sistemas y Computación","Ingeniería Eléctrica",
+				  "Ingeniería Electrónica","Ingeniería Industrial","Ingeniería Mecánica","Ingeniería Mecatrónica",
+				  "Ingeniería Química","Fisioterapia","Fonoaudiología","Medicina","Nutrición y Dietética",
+				  "Terapia Ocupacional","Medicina Veterinaria","Zootecnia","Odontología");
 		  /* add a ScrollableList, by default it behaves like a DropdownList */
 		  cp5.addScrollableList("Carrera")
 		     .setPosition(100,260)
