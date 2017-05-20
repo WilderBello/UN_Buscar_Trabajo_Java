@@ -37,16 +37,14 @@ public class IniciarSesion extends PApplet{
 		     .setAutoClear(false)
 		     ;
 		  //TODO Botón    
-		  cp5.addBang("Ingresar")
+		  cp5.addButton("Ingresar")
 		     .setPosition(110,240)
 		     .setSize(80,40)
-		     .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER)
-		     ; 
-		  cp5.addBang("Cancelar")
+		     ;
+		  cp5.addButton("Cancelar")
 		     .setPosition(210,240)
 		     .setSize(80,40)
-		     .getCaptionLabel().align(ControlP5.CENTER, ControlP5.CENTER)
-		     ; 
+		     ;
 		     
 		  textFont(font);
 		}
