@@ -7,9 +7,9 @@ public class IniciarSesion extends PApplet{
 	ControlP5 cp5;
 	String textValue = "";
 	
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		PApplet.main("IniciarSesion");
-	}
+	}*/
 	public void settings(){
 		size(400,400);
 	}

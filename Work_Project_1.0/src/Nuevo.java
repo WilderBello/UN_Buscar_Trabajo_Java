@@ -1,14 +1,15 @@
 import processing.core.*;
 import controlP5.*;
+
 import java.util.*;
 public class Nuevo extends PApplet{
 	ControlP5 cp5;
 	String textVal = "";
 	Textlabel Titulo;
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		PApplet.main("Nuevo");
-	}
+	}*/
 	
 	public void settings(){
 		size(400,400);
@@ -17,7 +18,7 @@ public class Nuevo extends PApplet{
 	 * 
 	 */
 	public void setup() {
-		 PFont font = createFont("arial",20);
+		PFont font = createFont("arial",20);
 		cp5 = new ControlP5(this);
 ////////////////// TITULO /////////////////////////////////////
 		Titulo = cp5.addTextlabel("label")
