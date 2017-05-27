@@ -7,6 +7,7 @@ import processing.core.PFont;
 public class EmpleandoUN extends PApplet {
 	static ControlP5 inicio;
 	ControlP5 cp5;
+	ControlP5 us;
 	Usuario user;
 	Convocatoria conv;
 	
@@ -21,8 +22,10 @@ public class EmpleandoUN extends PApplet {
 	
 	public void setup() {
 		PFont font = createFont("arial",20);
-	  noStroke();
+		us = new ControlP5(this);
 	  inicio = new ControlP5(this);
+	  user = new Usuario();
+	  conv = new Convocatoria();
 	  inicio.addButton("ingresar").setPosition(100,200).setSize(80,40).show();
 	  inicio.addButton("nuevo").setPosition(200,200).setSize(80,40).show(); 
 	  cp5 = new ControlP5(this);
@@ -34,12 +37,12 @@ public class EmpleandoUN extends PApplet {
 	
 	public void nuevo(){
 		PFont font = createFont("arial",20);
-		user.crear(inicio,cp5,font);
+		user.crear(inicio,us,font);
 	}
 	
 	public void ingresar(){
 		PFont font = createFont("arial",20);
-		user.init(inicio,cp5,font);
+		user.init(inicio,us,font);
 	}
 	
 	
@@ -65,12 +68,12 @@ public class EmpleandoUN extends PApplet {
 	
 	public void acceder(){
 		PFont fonter = createFont("arial",20);
-		conv.ofert(cp5,fonter);
+		conv.ofert(us,cp5,fonter);
 	}
 	
 	public void aceptar(){
 		PFont fonter = createFont("arial",20);
-		conv.ofert(cp5,fonter);
+		conv.ofert(us, cp5,fonter);
 	}
 	public void clear() {
 		cp5.get(Textfield.class,"user").clear();
