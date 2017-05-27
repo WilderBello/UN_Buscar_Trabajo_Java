@@ -1,7 +1,8 @@
 import processing.core.*;
 import controlP5.*;
 
-public class Convocatoria extends EmpleandoUN {
+public class Convocatoria {
+	
 	public static boolean ofert (ControlP5 cp5,PFont font) {
 		cp5.addButton("ingresar").hide();
 		cp5.addButton("clear").hide();

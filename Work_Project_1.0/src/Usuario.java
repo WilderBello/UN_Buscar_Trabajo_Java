@@ -3,9 +3,9 @@ import java.util.*;
 import controlP5.*;
 
 
-public class Usuario extends EmpleandoUN{
+public class Usuario{
 	
-	public static boolean init (ControlP5 cp5,PFont font) {
+	public boolean init (ControlP5 inicio, ControlP5 cp5,PFont font) {
 		inicio.hide();
 		cp5.addTextfield("user").setPosition(100,100).setSize(200,30).setFont(font).setAutoClear(false);     
 		cp5.addTextfield("password").setPosition(100,170).setSize(200,30).setFont(font).setAutoClear(false);
@@ -15,7 +15,7 @@ public class Usuario extends EmpleandoUN{
 		return true;
 	}
 	
-	public static boolean crear (ControlP5 cp5,PFont font) {
+	public boolean crear (ControlP5 inicio, ControlP5 cp5,PFont font) {
 		inicio.hide();
 		String textVal = "";
 		Textlabel Titulo;
@@ -44,25 +44,5 @@ public class Usuario extends EmpleandoUN{
 		return true;
 	}
 	
-	public void clear() {
-		cp5.get(Textfield.class,"user").clear();
-		cp5.get(Textfield.class,"password").clear();
-		cp5.get(Textfield.class,"nombre").clear();
-	  	cp5.get(Textfield.class,"apellido").clear();
-	}
-	
-	public void input(String theText) {
-		  // automatically receives results from controller input
-		  println("a textfield event for controller 'user' : "+theText);
-	}
-	
-	public void controlEvent(ControlEvent theEvent) {
-		if(theEvent.isAssignableFrom(Textfield.class)) {
-			println("controlEvent: accessing a string from controller '"
-					+theEvent.getName()+"': "
-					+theEvent.getStringValue()
-					);
-	  }
-	}
 
 }
